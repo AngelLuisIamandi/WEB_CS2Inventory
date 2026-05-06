@@ -9,6 +9,10 @@ git-guia.md
 # Carpetas de dependencias (nunca se suben a GitHub)
 node_modules/
 
+# Herramientas locales de precios
+tools/
+data/cajas_actualizadas.json
+
 # Archivos temporales del sistema
 .DS_Store
 Thumbs.db
