@@ -512,20 +512,22 @@ function initGsapAnimations() {
         });
     });
 
-    const cards = document.querySelectorAll('.glass-card:not(.hero-preview-card):not(.stat-card)');
-    if (cards.length > 0) {
-        gsap.from(cards, {
+    const cards = document.querySelectorAll('.glass-card:not(.hero-preview-card):not(.stat-card):not(.no-gsap)');
+    cards.forEach((card, index) => {
+        gsap.from(card, {
             scrollTrigger: {
-                trigger: cards[0],
-                start: "top 85%",
+                trigger: card,
+                start: "top 90%",
+                toggleActions: "play none none none"
             },
-            y: 40,
+            y: 30,
             opacity: 0,
-            duration: 1,
-            stagger: 0.1,
-            ease: "power3.out"
+            duration: 0.8,
+            delay: index * 0.1,
+            ease: "power2.out",
+            clearProps: "all" // Asegura que los estilos de GSAP se eliminen al terminar
         });
-    }
+    });
 
     // 4. Parallax Effect
     if (document.querySelector('.parallax-section')) {

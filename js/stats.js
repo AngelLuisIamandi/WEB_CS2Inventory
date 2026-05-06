@@ -262,7 +262,12 @@ function initChart() {
     };
 
     chart = new ApexCharts(document.querySelector("#mainChart"), options);
-    chart.render();
+    chart.render().then(() => {
+        // Refresh ScrollTrigger after chart is rendered to account for layout changes
+        if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.refresh();
+        }
+    });
 }
 
 /**
