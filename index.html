@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Inventory | Control de Cajas Premium</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+</head>
+<body>
+
+    <!-- Particles Background -->
+    <canvas id="bg-particles"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-follower" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Navbar Container -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="section-padding min-vh-90 d-flex align-items-center position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <span class="tag mb-3">Solución de Inventario</span>
+                    <h1 class="display-1 display-hero mb-4">Controla tus Cajas de <span class="text-gradient">CS2</span></h1>
+                    <p class="lead mb-5">
+                        Una herramienta moderna, rápida y segura para gestionar tu colección de cajas de Counter-Strike 2. Visualiza el valor, la cantidad y organiza tu inventario con un estilo Premium.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="inventario.html" class="btn btn-premium btn-premium-primary">Explorar Inventario</a>
+                        <a href="#catalog" class="btn btn-premium btn-premium-outline">Ver Catálogo</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card hero-preview-card p-4" id="live-preview-card">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <span class="small fw-bold text-secondary text-uppercase">Previsualización Live</span>
+                            <div class="tag" style="font-size: 0.6rem;" id="live-preview-status">Actualizado</div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="small text-secondary" id="live-preview-label">Valor Total</span>
+                                <span class="fw-bold" id="live-preview-total">€0.00</span>
+                            </div>
+                            <div class="progress" style="height: 4px; background: rgba(255,255,255,0.05);">
+                                <div class="progress-bar bg-primary" id="live-preview-bar" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+                                    <small class="d-block text-secondary mb-1">Cajas</small>
+                                    <span class="fw-bold text-primary" id="live-preview-cases">0</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+                                    <small class="d-block text-secondary mb-1">Profit</small>
+                                    <span class="fw-bold" id="live-preview-profit">€0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticker Section -->
+    <div class="ticker-wrap">
+        <div class="ticker-content" id="ticker">
+            <!-- Dynamic content from cajas.json -->
+        </div>
+    </div>
+
+    <!-- Stats Section with 3D Logo -->
+    <section class="section-padding position-relative overflow-hidden" id="stats-lightning-section">
+        <!-- SVG Canvas for Lightning -->
+        <svg id="lightning-svg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;"></svg>
+        
+        <div class="container" style="position: relative; z-index: 2;">
+            <div class="row g-5 align-items-center">
+                <!-- Left Stats -->
+                <div class="col-lg-4 text-center">
+                    <div class="stat-item mb-5" data-stat-id="1" style="position: relative; z-index: 10;">
+                        <div class="stat-number" data-target="2500">0</div>
+                        <p class="text-secondary fw-bold text-uppercase small" style="letter-spacing: 2px;">Análisis de Mercado</p>
+                    </div>
+                    <div class="stat-item" data-stat-id="2" style="position: relative; z-index: 10;">
+                        <div class="stat-number" data-target="150">0</div>
+                        <p class="text-secondary fw-bold text-uppercase small" style="letter-spacing: 2px;">Usuarios Activos</p>
+                    </div>
+                </div>
+
+                <!-- Center 3D Logo -->
+                <div class="col-lg-4">
+                    <div class="logo-3d-container py-4" id="logo-trigger">
+                        <div class="logo-glow"></div>
+                        <div class="logo-3d" id="logo-3d">
+                            <img src="assets/img/icon.svg" alt="CS2 Brand Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Stats -->
+                <div class="col-lg-4 text-center">
+                    <div class="stat-item mb-5" data-stat-id="3">
+                        <div class="stat-number" data-target="100">0</div>
+                        <p class="text-secondary fw-bold text-uppercase small" style="letter-spacing: 2px;">% Privacidad</p>
+                    </div>
+                    <div class="stat-item" data-stat-id="4">
+                        <div class="stat-number" data-target="99">0</div>
+                        <p class="text-secondary fw-bold text-uppercase small" style="letter-spacing: 2px;">% Disponibilidad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Visual Section -->
+    <section class="parallax-section">
+        <div class="parallax-bg" id="parallax-bg"></div>
+        <div class="parallax-text" id="parallax-text">COUNTER-STRIKE 2</div>
+    </section>
+
+    <!-- Case Catalog Section -->
+    <section id="catalog" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Catálogo de Cajas</h2>
+                <p class="text-secondary">Explora todas las cajas disponibles en el mercado de CS2.</p>
+                
+                <!-- Category Filter -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-4" id="catalog-filters">
+                    <button class="btn btn-premium-action active px-4" data-category="all">Todas</button>
+                    <!-- Categories will be injected here -->
+                </div>
+            </div>
+
+            <div id="catalog-container">
+                <!-- Cases will be injected here grouped by category or in a unified grid -->
+                <div class="row g-4" id="catalog-grid">
+                    <!-- Dynamic Content -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Container -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas | CS2 Case Control</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+</head>
+<body>
+
+    <!-- Particles Background -->
+    <canvas id="bg-particles"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-follower" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Navbar Container -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main class="section-padding mt-5">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-5">
+                <div>
+                    <h1 class="display-4 fw-bold">Estadísticas de Inversión</h1>
+                    <p class="text-secondary">Evolución temporal de tu patrimonio en cajas.</p>
+                </div>
+                <div style="min-width: 250px;">
+                    <label class="form-label text-secondary small mb-2">Filtrar por Caja</label>
+                    <select id="filter-case" class="form-select bg-dark border-secondary text-white">
+                        <option value="all">Total Inventario</option>
+                        <!-- Dynamic Options -->
+                    </select>
+                </div>
+            </div>
+
+            <!-- Main Chart Container -->
+            <div class="glass-card p-4" style="min-height: 500px;">
+                <div id="mainChart"></div>
+            </div>
+
+            <!-- Info Footer -->
+            <div class="mt-4 text-center">
+                <p class="small text-secondary">
+                    <i class="fa-solid fa-circle-info me-1"></i> El gráfico muestra datos acumulados basados en tu historial de transacciones.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+    <!-- ApexCharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/stats.js"></script>
+</body>
+</html>

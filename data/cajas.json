@@ -1,0 +1,370 @@
+[
+    {
+        "id": "dead_hand_terminal",
+        "nombre": "Sealed Dead Hand Terminal",
+        "foto": "assets/img/Dead Hand Terminal.webp",
+        "link": "https://steamcommunity.com/market/listings/730/Sealed%20Dead%20Hand%20Terminal",
+        "precio": 2.25,
+        "categoria": "Active Drop"
+    },
+    {
+        "id": "genesis_terminal",
+        "nombre": "Sealed Genesis Terminal",
+        "foto": "assets/img/Sealed Genesis Terminal.png",
+        "link": "https://steamcommunity.com/market/listings/730/Sealed%20Genesis%20Terminal",
+        "precio": 0.19,
+        "categoria": "Active Drop"
+    },
+    {
+        "id": "fever_case",
+        "nombre": "Fever Case",
+        "foto": "assets/img/Fever Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Fever%20Case",
+        "precio": 0.69,
+        "categoria": "Armory Exclusive Cases"
+    },
+    {
+        "id": "gallery_case",
+        "nombre": "Gallery Case",
+        "foto": "assets/img/Gallery Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Gallery%20Case",
+        "precio": 1.18,
+        "categoria": "Armory Exclusive Cases"
+    },
+    {
+        "id": "kilowatt",
+        "nombre": "Kilowatt Case",
+        "foto": "assets/img/Killowat Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Kilowatt%20Case",
+        "precio": 0.3,
+        "categoria": "Active Drop"
+    },
+    {
+        "id": "anubis_collection",
+        "nombre": "Anubis Collection Package",
+        "foto": "assets/img/Anubis Collection Package.png",
+        "link": "https://steamcommunity.com/market/listings/730/Anubis%20Collection%20Package",
+        "precio": 2.76,
+        "categoria": "Collection"
+    },
+    {
+        "id": "revolution",
+        "nombre": "Revolution Case",
+        "foto": "assets/img/Revolution Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Revolution%20Case",
+        "precio": 0.37,
+        "categoria": "Active Drop"
+    },
+    {
+        "id": "recoil",
+        "nombre": "Recoil Case",
+        "foto": "assets/img/Recoil Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Recoil%20Case",
+        "precio": 0.48,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "dreams_nightmares",
+        "nombre": "Dreams & Nightmares Case",
+        "foto": "assets/img/Dreams And Nightmares Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Dreams%20%26%20Nightmares%20Case",
+        "precio": 1.67,
+        "categoria": "Active Drop"
+    },
+    {
+        "id": "riptide",
+        "nombre": "Operation Riptide Case",
+        "foto": "assets/img/Operation Riptide Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Operation%20Riptide%20Case",
+        "precio": 12.18,
+        "categoria": "Discontinued Cases"
+    },
+    {
+        "id": "snakebite",
+        "nombre": "Snakebite Case",
+        "foto": "assets/img/Snakebite Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Snakebite%20Case",
+        "precio": 0.73,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "broken_fang",
+        "nombre": "Operation Broken Fang Case",
+        "foto": "assets/img/Operation Broken Fang Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Operation%20Broken%20Fang%20Case",
+        "precio": 8.55,
+        "categoria": "Discontinued Cases"
+    },
+    {
+        "id": "fracture",
+        "nombre": "Fracture Case",
+        "foto": "assets/img/Fracture Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Fracture%20Case",
+        "precio": 0.73,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "prisma2",
+        "nombre": "Prisma 2 Case",
+        "foto": "assets/img/Prisma 2 Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Prisma%202%20Case",
+        "precio": 2.01,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "cs20",
+        "nombre": "CS20 Case",
+        "foto": "assets/img/CS20 Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/CS20%20Case",
+        "precio": 1.65,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "xray_p250",
+        "nombre": "X-Ray P250 Package",
+        "foto": "assets/img/X-Ray P250 Package.png",
+        "link": "https://steamcommunity.com/market/listings/730/X-Ray%20P250%20Package",
+        "precio": 1.95,
+        "categoria": "Limited Item"
+    },
+    {
+        "id": "shattered_web",
+        "nombre": "Shattered Web Case",
+        "foto": "assets/img/Shattered Web Cas.png",
+        "link": "https://steamcommunity.com/market/listings/730/Shattered%20Web%20Case",
+        "precio": 7.39,
+        "categoria": "Discontinued Cases"
+    },
+    {
+        "id": "prisma",
+        "nombre": "Prisma Case",
+        "foto": "assets/img/Prisma Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Prisma%20Case",
+        "precio": 1.97,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "danger_zone",
+        "nombre": "Danger Zone Case",
+        "foto": "assets/img/Danger Zone Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Danger%20Zone%20Case",
+        "precio": 1.96,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "horizon",
+        "nombre": "Horizon Case",
+        "foto": "assets/img/Horizon Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Horizon%20Case",
+        "precio": 2.09,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "clutch",
+        "nombre": "Clutch Case",
+        "foto": "assets/img/Clutch Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Clutch%20Case",
+        "precio": 0.83,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "spectrum2",
+        "nombre": "Spectrum 2 Case",
+        "foto": "assets/img/Spectrum 2 Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Spectrum%202%20Case",
+        "precio": 3.45,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "hydra",
+        "nombre": "Operation Hydra Case",
+        "foto": "assets/img/Operation Hydra Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Operation%20Hydra%20Case",
+        "precio": 41.59,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "spectrum",
+        "nombre": "Spectrum Case",
+        "foto": "assets/img/Spectrum Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Spectrum%20Case",
+        "precio": 4.64,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "glove",
+        "nombre": "Glove Case",
+        "foto": "assets/img/Glove Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Glove%20Case",
+        "precio": 13.99,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "gamma2",
+        "nombre": "Gamma 2 Case",
+        "foto": "assets/img/Gamma 2 Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Gamma%202%20Case",
+        "precio": 3.69,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "gamma",
+        "nombre": "Gamma Case",
+        "foto": "assets/img/Gamma Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Gamma%20Case",
+        "precio": 3.8,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "chroma3",
+        "nombre": "Chroma 3 Case",
+        "foto": "assets/img/Chroma 3 Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Chroma%203%20Case",
+        "precio": 3.99,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "wildfire",
+        "nombre": "Operation Wildfire Case",
+        "foto": "assets/img/Operation Wildfire Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Operation%20Wildfire%20Case",
+        "precio": 4.52,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "revolver",
+        "nombre": "Revolver Case",
+        "foto": "assets/img/Revolver Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Revolver%20Case",
+        "precio": 3.79,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "shadow",
+        "nombre": "Shadow Case",
+        "foto": "assets/img/Shadow Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Shadow%20Case",
+        "precio": 2.33,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "falchion",
+        "nombre": "Falchion Case",
+        "foto": "assets/img/Falchion Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Falchion%20Case",
+        "precio": 2.09,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "chroma2",
+        "nombre": "Chroma 2 Case",
+        "foto": "assets/img/Chroma 2 Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Chroma%202%20Case",
+        "precio": 4.97,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "chroma",
+        "nombre": "Chroma Case",
+        "foto": "assets/img/Chroma Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Chroma%20Case",
+        "precio": 5.88,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "vanguard",
+        "nombre": "Operation Vanguard Weapon Case",
+        "foto": "assets/img/Operation Vanguard Weapon Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Operation%20Vanguard%20Weapon%20Case",
+        "precio": 6.48,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "esports_2014_summer",
+        "nombre": "eSports 2014 Summer Case",
+        "foto": "assets/img/eSports 2014 Summer Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/eSports%202014%20Summer%20Case",
+        "precio": 20.32,
+        "categoria": "Discontinued Cases"
+    },
+    {
+        "id": "breakout",
+        "nombre": "Operation Breakout Weapon Case",
+        "foto": "assets/img/Operation Breakout Weapon Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Operation%20Breakout%20Weapon%20Case",
+        "precio": 9.58,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "huntsman",
+        "nombre": "Huntsman Weapon Case",
+        "foto": "assets/img/Huntsman Weapon Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Huntsman%20Weapon%20Case",
+        "precio": 11.49,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "phoenix",
+        "nombre": "Operation Phoenix Weapon Case",
+        "foto": "assets/img/Operation Phoenix Weapon Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Operation%20Phoenix%20Weapon%20Case",
+        "precio": 4.47,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "weapon3",
+        "nombre": "CS:GO Weapon Case 3",
+        "foto": "assets/img/CSGO Weapon Case 3.png",
+        "link": "https://steamcommunity.com/market/listings/730/CS%3AGO%20Weapon%20Case%203",
+        "precio": 16.99,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "winter_offensive",
+        "nombre": "Winter Offensive Weapon Case",
+        "foto": "assets/img/Winter Offensive Weapon Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Winter%20Offensive%20Weapon%20Case",
+        "precio": 12.83,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "esports_2013_winter",
+        "nombre": "eSports 2013 Winter Case",
+        "foto": "assets/img/eSport 2013 Winter Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/eSports%202013%20Winter%20Case",
+        "precio": 20.72,
+        "categoria": "Discontinued Cases"
+    },
+    {
+        "id": "weapon2",
+        "nombre": "CS:GO Weapon Case 2",
+        "foto": "assets/img/CSGO Weapon Case 2.png",
+        "link": "https://steamcommunity.com/market/listings/730/CS%3AGO%20Weapon%20Case%202",
+        "precio": 25,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "bravo",
+        "nombre": "Operation Bravo Case",
+        "foto": "assets/img/Operation Bravo Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/Operation%20Bravo%20Case",
+        "precio": 74.14,
+        "categoria": "Rare Cases"
+    },
+    {
+        "id": "esports_2013",
+        "nombre": "eSports 2013 Case",
+        "foto": "assets/img/eSport 2013 Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/eSports%202013%20Case",
+        "precio": 63.49,
+        "categoria": "Discontinued Cases"
+    },
+    {
+        "id": "weapon1",
+        "nombre": "CS:GO Weapon Case",
+        "foto": "assets/img/CSGO Weapon Case.png",
+        "link": "https://steamcommunity.com/market/listings/730/CS:GO%20Weapon%20Case",
+        "precio": 150.52,
+        "categoria": "Rare Cases"
+    }
+]
