@@ -312,6 +312,9 @@ function renderInventory() {
             return `
                 <div class="col-md-4 col-lg-3">
                     <div class="glass-card p-0 overflow-hidden h-100 position-relative">
+                        <div class="case-price-tag" title="Precio unitario actual">
+                            €${(master.precio || 0).toFixed(2)}
+                        </div>
                         <a href="${master.link || '#'}" target="_blank" class="steam-link-icon" title="Ver en Steam Market">
                             <i class="fa-brands fa-steam"></i>
                         </a>
@@ -376,7 +379,7 @@ function renderInventory() {
 
                                 totalCases += item.total_quantity;
                                 totalInvestedAllTime += totalPurchasedCost;
-                                totalCurrentValue += currentInventoryVal;
+                                totalCurrentInventoryValue += currentInventoryVal;
                                 totalSalesRevenue += salesRevenue;
                                 totalCostOfSales += costOfSoldItems;
 
