@@ -4,6 +4,7 @@
  */
 
 let masterCases = [];
+let lastUpdate = '';
 
 document.addEventListener("DOMContentLoaded", async () => {
     await loadMasterData();
@@ -16,7 +17,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 async function loadMasterData() {
     try {
         const response = await fetch('data/cajas.json');
-        masterCases = await response.json();
+        const data = await response.json();
+        masterCases = data.cajas || [];
+        lastUpdate = data.last_update || '';
         renderAdminTable();
     } catch (error) {
         console.error("Error loading master data:", error);
@@ -75,7 +78,19 @@ function initEventListeners() {
     document.getElementById('btn-generate-json')?.addEventListener('click', () => {
         const jsonOutput = document.getElementById('json-output');
         if (jsonOutput) {
-            jsonOutput.value = JSON.stringify(masterCases, null, 4);
+            const now = new Date();
+            const timestamp = now.getFullYear() + '-' + 
+                              String(now.getMonth() + 1).padStart(2, '0') + '-' + 
+                              String(now.getDate()).padStart(2, '0') + ' ' + 
+                              String(now.getHours()).padStart(2, '0') + ':' + 
+                              String(now.getMinutes()).padStart(2, '0') + ':' + 
+                              String(now.getSeconds()).padStart(2, '0');
+            
+            const exportData = {
+                last_update: timestamp,
+                cajas: masterCases
+            };
+            jsonOutput.value = JSON.stringify(exportData, null, 4);
             const modal = new bootstrap.Modal(document.getElementById('jsonModal'));
             modal.show();
         }

@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 async function loadCatalogData() {
     try {
         const response = await fetch('data/cajas.json');
-        allCases = await response.json();
+        const data = await response.json();
+        allCases = data.cajas || [];
     } catch (error) {
         console.error("Error loading catalog data:", error);
     }

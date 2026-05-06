@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 async function loadMasterData() {
     try {
         const response = await fetch('data/cajas.json');
-        masterCases = await response.json();
+        const data = await response.json();
+        masterCases = data.cajas || [];
     } catch (error) {
         console.error("Error loading master data:", error);
     }

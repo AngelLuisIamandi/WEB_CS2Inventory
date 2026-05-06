@@ -6,6 +6,7 @@
 const STORAGE_KEY = 'cs2_inventory_data';
 let inventory = {};
 let masterCases = [];
+let lastUpdate = 'Desconocida';
 let viewMode = 'grid'; // 'grid' or 'list'
 
 // Global state for pending actions
@@ -53,7 +54,16 @@ function showNotice(title, message) {
 async function loadMasterData() {
     try {
         const response = await fetch('data/cajas.json');
-        masterCases = await response.json();
+        const data = await response.json();
+        masterCases = data.cajas || [];
+        lastUpdate = data.last_update || 'Desconocida';
+        
+        // Mostrar fecha de actualización si existe el elemento
+        const updateEl = document.getElementById('last-update-display');
+        if (updateEl) {
+            updateEl.innerText = lastUpdate;
+        }
+
         populateCaseSelect();
     } catch (error) {
         console.error("Error loading master data:", error);
@@ -366,7 +376,7 @@ function renderInventory() {
 
                                 totalCases += item.total_quantity;
                                 totalInvestedAllTime += totalPurchasedCost;
-                                totalCurrentInventoryValue += currentInventoryVal;
+                                totalCurrentValue += currentInventoryVal;
                                 totalSalesRevenue += salesRevenue;
                                 totalCostOfSales += costOfSoldItems;
 

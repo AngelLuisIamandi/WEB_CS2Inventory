@@ -47,9 +47,14 @@
                 <div>
                     <h1 class="display-4 fw-bold">Mi Inventario</h1>
                     <p class="text-secondary mb-1">Gestiona tus cajas y colecciones.</p>
-                    <small class="text-secondary-subtle opacity-75" style="font-size: 0.75rem;">
-                        <i class="fa-solid fa-circle-info me-1"></i> Precios basados en Steam Market (Sin Impuestos)
-                    </small>
+                    <div class="d-flex align-items-center gap-3">
+                        <small class="text-secondary-subtle opacity-75" style="font-size: 0.75rem;">
+                            <i class="fa-solid fa-circle-info me-1"></i> Precios basados en Steam Market (Sin Impuestos)
+                        </small>
+                        <small class="text-secondary-subtle opacity-75" style="font-size: 0.75rem;">
+                            <i class="fa-solid fa-clock me-1"></i> Act: <span id="last-update-display">Cargando...</span>
+                        </small>
+                    </div>
                 </div>
                 <div class="d-flex gap-2">
                     <div class="btn-group me-2" role="group">

@@ -199,7 +199,8 @@ async function initLivePreview() {
 
     try {
         const response = await fetch('data/cajas.json');
-        const masterCases = await response.json();
+        const data = await response.json();
+        const masterCases = data.cajas || [];
 
         let totalCases = 0;
         let totalInvestedAllTime = 0;
